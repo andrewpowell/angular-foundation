@@ -1,104 +1,226 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Dialog"
+    height="475"
     title="Input Details"
     xtype="dialog">
     <items
         jcr:primaryType="cq:Panel"
         xtype="panel">
         <items jcr:primaryType="cq:WidgetCollection">
-            <displayLabel
-                jcr:primaryType="nt:unstructured"
-                fieldLabel="Display Label"
-                name="./displayLabel"
-                validateOnBlur="true"
-                xtype="textfield"/>
-            <ngModel
-                jcr:primaryType="nt:unstructured"
-                fieldLabel="ng-model"
-                name="./ngModel"
-                validateOnBlur="true"
-                xtype="textfield"/>
-            <name
-                jcr:primaryType="nt:unstructured"
-                allowBlank="true"
-                fieldLabel="name"
-                name="./name"
-                validateOnBlur="true"
-                xtype="textfield"/>
-            <required
+            <requiredItems
                 jcr:primaryType="cq:Widget"
-                allowBlank="true"
-                defaultValue="false"
-                fieldLabel="required"
-                name="./required"
-                type="select"
-                xtype="selection">
-                <options jcr:primaryType="cq:WidgetCollection">
-                    <one
+                title="Required Items"
+                xtype="dialogfieldset">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <displayLabel
                         jcr:primaryType="nt:unstructured"
-                        text="true"
-                        value="true"/>
-                    <two
+                        allowBlank="false"
+                        fieldLabel="Display Label"
+                        name="./displayLabel"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <type
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        defaultValue="text"
+                        fieldLabel="Input Type"
+                        name="./type"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <button
+                                jcr:primaryType="nt:unstructured"
+                                text="button"
+                                value="button"/>
+                            <checkbox
+                                jcr:primaryType="nt:unstructured"
+                                text="checkbox"
+                                value="checkbox"/>
+                            <color
+                                jcr:primaryType="nt:unstructured"
+                                text="color"
+                                value="color"/>
+                            <date
+                                jcr:primaryType="nt:unstructured"
+                                text="date"
+                                value="date"/>
+                            <datetime
+                                jcr:primaryType="nt:unstructured"
+                                text="datetime"
+                                value="datetime"/>
+                            <datetime-local
+                                jcr:primaryType="nt:unstructured"
+                                text="datetime-local"
+                                value="datetime-local"/>
+                            <email
+                                jcr:primaryType="nt:unstructured"
+                                text="email"
+                                value="email"/>
+                            <file
+                                jcr:primaryType="nt:unstructured"
+                                text="file"
+                                value="file"/>
+                            <hidden
+                                jcr:primaryType="nt:unstructured"
+                                text="hidden"
+                                value="hidden"/>
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                text="image"
+                                value="image"/>
+                            <month
+                                jcr:primaryType="nt:unstructured"
+                                text="month"
+                                value="month"/>
+                            <number
+                                jcr:primaryType="nt:unstructured"
+                                text="number"
+                                value="number"/>
+                            <password
+                                jcr:primaryType="nt:unstructured"
+                                text="password"
+                                value="password"/>
+                            <radio
+                                jcr:primaryType="nt:unstructured"
+                                text="radio"
+                                value="radio"/>
+                            <range
+                                jcr:primaryType="nt:unstructured"
+                                text="range"
+                                value="range"/>
+                            <reset
+                                jcr:primaryType="nt:unstructured"
+                                text="reset"
+                                value="reset"/>
+                            <search
+                                jcr:primaryType="nt:unstructured"
+                                text="search"
+                                value="search"/>
+                            <submit
+                                jcr:primaryType="nt:unstructured"
+                                text="submit"
+                                value="submit"/>
+                            <tel
+                                jcr:primaryType="nt:unstructured"
+                                text="tel"
+                                value="tel"/>
+                            <text
+                                jcr:primaryType="nt:unstructured"
+                                text="text"
+                                value="text"/>
+                            <time
+                                jcr:primaryType="nt:unstructured"
+                                text="time"
+                                value="time"/>
+                            <url
+                                jcr:primaryType="nt:unstructured"
+                                text="url"
+                                value="url"/>
+                            <week
+                                jcr:primaryType="nt:unstructured"
+                                text="week"
+                                value="week"/>
+                        </options>
+                    </type>
+                    <ngModel
                         jcr:primaryType="nt:unstructured"
-                        text="false"
-                        value="false"/>
-                </options>
-            </required>
-            <ngRequired
+                        allowBlank="false"
+                        fieldLabel="ng-model"
+                        name="./ngModel"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <name
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="false"
+                        fieldLabel="name"
+                        name="./name"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                </items>
+            </requiredItems>
+            <optionalItems
                 jcr:primaryType="cq:Widget"
-                allowBlank="true"
-                defaultValue="false"
-                fieldLabel="ng-required"
-                name="./ngRequired"
-                type="select"
-                xtype="selection">
-                <options jcr:primaryType="cq:WidgetCollection">
-                    <one
+                collapsed="{Boolean}true"
+                collapsible="{Boolean}true"
+                title="Optional Items"
+                xtype="dialogfieldset">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <required
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="true"
+                        defaultValue="false"
+                        fieldLabel="required"
+                        name="./required"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <one
+                                jcr:primaryType="nt:unstructured"
+                                text="true"
+                                value="true"/>
+                            <two
+                                jcr:primaryType="nt:unstructured"
+                                text="false"
+                                value="false"/>
+                        </options>
+                    </required>
+                    <ngRequired
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="true"
+                        defaultValue="false"
+                        fieldLabel="ng-required"
+                        name="./ngRequired"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <one
+                                jcr:primaryType="nt:unstructured"
+                                text="true"
+                                value="true"/>
+                            <two
+                                jcr:primaryType="nt:unstructured"
+                                text="false"
+                                value="false"/>
+                        </options>
+                    </ngRequired>
+                    <ngMinLength
                         jcr:primaryType="nt:unstructured"
-                        text="true"
-                        value="true"/>
-                    <two
+                        allowBlank="true"
+                        fieldLabel="ng-minlength"
+                        name="./ngMinLength"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <ngMaxLength
                         jcr:primaryType="nt:unstructured"
-                        text="false"
-                        value="false"/>
-                </options>
-            </ngRequired>
-            <ngMinLength
-                jcr:primaryType="nt:unstructured"
-                allowBlank="true"
-                fieldLabel="ng-minlength"
-                name="./ngMinLength"
-                validateOnBlur="true"
-                xtype="textfield"/>
-            <ngMaxLength
-                jcr:primaryType="nt:unstructured"
-                allowBlank="true"
-                fieldLabel="ng-maxlength"
-                name="./ngMaxLength"
-                validateOnBlur="true"
-                xtype="textfield"/>
-            <ngPattern
-                jcr:primaryType="nt:unstructured"
-                allowBlank="true"
-                fieldLabel="ng-pattern"
-                name="./ngPattern"
-                validateOnBlur="true"
-                xtype="textfield"/>
-            <ngChange
-                jcr:primaryType="nt:unstructured"
-                allowBlank="true"
-                fieldLabel="ng-change"
-                name="./ngChange"
-                validateOnBlur="true"
-                xtype="textfield"/>
-            <cssClass
-                jcr:primaryType="nt:unstructured"
-                allowBlank="true"
-                fieldLabel="CSS Class name"
-                name="./class"
-                validateOnBlur="true"
-                xtype="textfield"/>
+                        allowBlank="true"
+                        fieldLabel="ng-maxlength"
+                        name="./ngMaxLength"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <ngPattern
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="true"
+                        fieldLabel="ng-pattern"
+                        name="./ngPattern"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <ngChange
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="true"
+                        fieldLabel="ng-change"
+                        name="./ngChange"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <cssClass
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="true"
+                        fieldLabel="CSS Class name"
+                        name="./cssClass"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                </items>
+            </optionalItems>
         </items>
     </items>
 </jcr:root>
