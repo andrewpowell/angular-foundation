@@ -1,8 +1,8 @@
 <%--
 
-  Angular Input component.
+  Angular Checkbox component.
 
-  HTML input element control with angular data-binding. Input control follows HTML5 input types and polyfills the HTML5 validation behavior for older browsers.
+  HTML Checkbox
 
 --%>
 <%@include file="/apps/angular/global.jsp"%>
