@@ -27,13 +27,6 @@
                         name="./ngModel"
                         validateOnBlur="true"
                         xtype="textfield"/>
-                    <name
-                        jcr:primaryType="nt:unstructured"
-                        allowBlank="false"
-                        fieldLabel="name"
-                        name="./name"
-                        validateOnBlur="true"
-                        xtype="textfield"/>
                 </items>
             </requiredItems>
             <optionalItems
@@ -43,6 +36,13 @@
                 title="Optional Items"
                 xtype="dialogfieldset">
                 <items jcr:primaryType="cq:WidgetCollection">
+                    <name
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="true"
+                        fieldLabel="name"
+                        name="./name"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
                     <required
                         jcr:primaryType="cq:Widget"
                         allowBlank="true"
