@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="150"
+    title="Controller Detail"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Panel"
+        border="false"
+        xtype="panel">
+        <items
+            jcr:primaryType="nt:unstructured"
+            fieldLabel="Controller Name"
+            name="./controllerName"
+            validateOnBlur="true"
+            xtype="textfield"/>
+    </items>
+</jcr:root>
