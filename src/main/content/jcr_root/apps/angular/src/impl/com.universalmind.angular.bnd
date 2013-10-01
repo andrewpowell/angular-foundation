@@ -1,0 +1,7 @@
+Export-Package: com.universalmind.angular
+Private-Package: com.universalmind.angular.impl
+Bundle-Name: Sample project angular
+Bundle-Description: Contains the angular sample bundle
+Bundle-SymbolicName: com.universalmind.angular
+Bundle-Version: 1.0-SNAPSHOT
+Bundle-Activator: com.universalmind.angular.impl.Activator
