@@ -9,5 +9,5 @@
         jcr:title="Angular Foundation Design"
         sling:resourceType="wcm/core/components/designer"/>
     <images/>
-    <clientlibs/>
+    <clientlib/>
 </jcr:root>
