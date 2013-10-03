@@ -10,6 +10,7 @@
 <%
 	// TODO add you code here
 %>
+<!doctype html>
 <html ng-app>
 	<cq:include script="head.jsp"/>
 	<cq:include script="body.jsp"/>    
