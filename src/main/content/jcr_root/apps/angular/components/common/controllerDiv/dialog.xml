@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Dialog"
     title="DIV Properties"
     xtype="dialog">
     <items
-            jcr:primaryType="cq:Panel"
-            xtype="panel">
+        jcr:primaryType="cq:Panel"
+        xtype="panel">
         <items jcr:primaryType="cq:WidgetCollection">
             <requiredItems
-                    jcr:primaryType="cq:Widget"
-                    title="Required Items"
-                    xtype="dialogfieldset">
+                jcr:primaryType="cq:Widget"
+                title="Required Items"
+                xtype="dialogfieldset">
                 <items jcr:primaryType="cq:WidgetCollection">
                     <idName
-                            jcr:primaryType="nt:unstructured"
-                            allowBlank="false"
-                            fieldLabel="DIV ID"
-                            name="./id"
-                            validateOnBlur="true"
-                            xtype="textfield"/>
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="false"
+                        fieldLabel="DIV ID"
+                        name="./id"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
                     <ngController
-                            jcr:primaryType="nt:unstructured"
-                            allowBlank="false"
-                            fieldLabel="ng-controller"
-                            name="./ngController"
-                            validateOnBlur="true"
-                            xtype="textfield"/>
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="false"
+                        fieldLabel="ng-controller"
+                        name="./ngController"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
                 </items>
             </requiredItems>
         </items>
