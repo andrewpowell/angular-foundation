@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="475"
+    title="Input Details"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Panel"
+        xtype="panel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <requiredItems
+                jcr:primaryType="cq:Widget"
+                title="Required Items"
+                xtype="dialogfieldset">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <displayLabel
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="false"
+                        fieldLabel="Display Label"
+                        name="./displayLabel"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <ngModel
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="false"
+                        fieldLabel="ng-model"
+                        name="./ngModel"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <value
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="true"
+                        fieldLabel="value"
+                        name="./value"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                </items>
+            </requiredItems>
+            <optionalItems
+                jcr:primaryType="cq:Widget"
+                collapsed="{Boolean}true"
+                collapsible="{Boolean}true"
+                title="Optional Items"
+                xtype="dialogfieldset">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <name
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="true"
+                        fieldLabel="name"
+                        name="./name"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <ngChange
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="true"
+                        fieldLabel="ng-change"
+                        name="./ngChange"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <cssClass
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="true"
+                        fieldLabel="CSS Class name"
+                        name="./cssClass"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                </items>
+            </optionalItems>
+        </items>
+    </items>
+</jcr:root>
