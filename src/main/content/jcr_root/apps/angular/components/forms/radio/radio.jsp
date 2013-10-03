@@ -27,5 +27,5 @@
 <c:set var="ngChangeEmpty" 	    value="<%= ngChange.isEmpty() %>"/>
 <c:set var="classEmpty" 	    value="<%= cssClass.isEmpty() %>"/>
 <c:out value="${displayLabel}"/>
-<input type="checkbox" ng-model="<c:out value="${ngModel}"/>" <c:if test="${!nameEmpty}">name="<c:out value="${name}"/>" </c:if><c:if test="${!valueEmpty}">value="<c:out value="${value}"/>" </c:if><c:if test="${!ngChangeEmpty}">ng-change="<c:out value="${ngChange}"/>" </c:if><c:if test="${!classEmpty}">class="<c:out value="${cssClass}"/>" </c:if>/>
+<input type="radio" ng-model="<c:out value="${ngModel}"/>" <c:if test="${!nameEmpty}">name="<c:out value="${name}"/>" </c:if><c:if test="${!valueEmpty}">value="<c:out value="${value}"/>" </c:if><c:if test="${!ngChangeEmpty}">ng-change="<c:out value="${ngChange}"/>" </c:if><c:if test="${!classEmpty}">class="<c:out value="${cssClass}"/>" </c:if>/>
 </input>

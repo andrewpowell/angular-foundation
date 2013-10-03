@@ -19,7 +19,6 @@
 	String  ngMaxLength  = properties.get("ngMaxLength", "");
 	String  ngPattern    = properties.get("ngPattern", "");
 	String  ngChange     = properties.get("ngChange", "");
-    String  ngTrim       = properties.get("ngTrim","");
     String  cssClass     = properties.get("cssClass", "");
 %>
 <c:set var="displayLabel"       value="<%= displayLabel%>"/>
@@ -31,7 +30,6 @@
 <c:set var="ngMaxLength"        value="<%= ngMaxLength %>"/>
 <c:set var="ngPattern" 	        value="<%= ngPattern %>"/>
 <c:set var="ngChange" 	        value="<%= ngChange %>"/>
-<c:set var="ngTrim" 	        value="<%= ngTrim %>"/>
 <c:set var="cssClass" 	        value="<%= cssClass %>"/>
 <c:set var="nameEmpty" 		    value="<%= name.isEmpty() %>"/>
 <c:set var="ngReqEmpty"         value="<%= ngReqEmpty %>"/>
@@ -39,8 +37,7 @@
 <c:set var="ngMaxLengthEmpty"   value="<%= ngMaxLength.isEmpty() %>"/>
 <c:set var="ngPatternEmpty" 	value="<%= ngPattern.isEmpty() %>"/>
 <c:set var="ngChangeEmpty" 	    value="<%= ngChange.isEmpty() %>"/>
-<c:set var="ngTrimEmpty" 	    value="<%= ngTrim.isEmpty() %>"/>
 <c:set var="classEmpty" 	    value="<%= cssClass.isEmpty() %>"/>
 <c:out value="${displayLabel}"/>
-<input type="text" ng-model="<c:out value="${ngModel}"/>" <c:if test="${!nameEmpty}">name="<c:out value="${name}"/>" </c:if><c:if test="${required}">required </c:if><c:if test="${!ngReqEmpty}">ng-required="<c:out value="${ngRequired}"/>" </c:if><c:if test="${!ngMinLengthEmpty}">ng-minlength="<c:out value="${ngMinLength}"/>" </c:if><c:if test="${!ngMaxLengthEmpty}">ng-maxlength="<c:out value="${ngMaxLength}"/>" </c:if><c:if test="${!ngPatternEmpty}">ng-pattern="<c:out value="${ngPattern}"/>" </c:if><c:if test="${!ngChangeEmpty}">ng-change="<c:out value="${ngChange}"/>" </c:if><c:if test="${!ngTrimEmpty}">ng-trim="<c:out value="${ngTrim}"/>" </c:if><c:if test="${!classEmpty}">class="<c:out value="${cssClass}"/>" </c:if>>
+<input type="url" ng-model="<c:out value="${ngModel}"/>" <c:if test="${!nameEmpty}">name="<c:out value="${name}"/>" </c:if><c:if test="${required}">required </c:if><c:if test="${!ngReqEmpty}">ng-required="<c:out value="${ngRequired}"/>" </c:if><c:if test="${!ngMinLengthEmpty}">ng-minlength="<c:out value="${ngMinLength}"/>" </c:if><c:if test="${!ngMaxLengthEmpty}">ng-maxlength="<c:out value="${ngMaxLength}"/>" </c:if><c:if test="${!ngPatternEmpty}">ng-pattern="<c:out value="${ngPattern}"/>" </c:if><c:if test="${!ngChangeEmpty}">ng-change="<c:out value="${ngChange}"/>" </c:if><c:if test="${!classEmpty}">class="<c:out value="${cssClass}"/>" </c:if>>
 </input>
