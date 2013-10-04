@@ -17,6 +17,6 @@
 <c:set var="controller"         value="<%= controller%>"/>
 <c:set var="idNameEmpty"        value="<%= idNameEmpty%>"/>
 <c:set var="controllerEmpty"    value="<%= controllerEmpty%>"/>
-<div <c:if test="${!idNameEmpty}">id="<c:out value="${idName}"/>" </c:if><c:if test="${!controller}">ng-controller="<c:out value="${controllerEmpty}"/>" </c:if>>
+<div <c:if test="${!idNameEmpty}">id="<c:out value="${idName}"/>" </c:if><c:if test="${!controllerEmpty}">ng-controller="<c:out value="${controller}"/>" </c:if>>
     <cq:include path="angularContent" resourceType="foundation/components/parsys"/>
 </div>
