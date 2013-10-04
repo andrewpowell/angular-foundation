@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Dialog"
+          helpPath="en/cq/current/wcm/default_components.html#Text"
+          title="Text"
+          xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+                jcr:primaryType="cq:Widget"
+                anchor="100%"
+                title="Text"
+                xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <isRichTextFlag
+                        jcr:primaryType="cq:Widget"
+                        ignoreData="{Boolean}true"
+                        name="./textIsRich"
+                        value="true"
+                        xtype="hidden"/>
+                <text
+                        jcr:primaryType="cq:Widget"
+                        hideLabel="{Boolean}true"
+                        name="./text"
+                        xtype="richtext">
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="[sourceedit]"/>
+                    </rtePlugins>
+                </text>
+            </items>
+        </tab1>
+        <tab2
+                jcr:primaryType="cq:Widget"
+                xtype="componentstyles"/>
+    </items>
+</jcr:root>
