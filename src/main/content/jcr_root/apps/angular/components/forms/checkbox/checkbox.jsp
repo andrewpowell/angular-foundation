@@ -24,11 +24,11 @@
 <c:set var="ngFalseValue"       value="<%= ngFalseValue %>"/>
 <c:set var="ngChange" 	        value="<%= ngChange %>"/>
 <c:set var="cssClass" 	        value="<%= cssClass %>"/>
+<c:set var="labelEmpty" 		value="<%= displayLabel.trim().isEmpty() %>"/>
 <c:set var="nameEmpty" 		    value="<%= name.isEmpty() %>"/>
 <c:set var="ngTrueValueEmpty"   value="<%= ngTrueValue.isEmpty() %>"/>
 <c:set var="ngFalseValueEmpty"  value="<%= ngFalseValue.isEmpty() %>"/>
 <c:set var="ngChangeEmpty" 	    value="<%= ngChange.isEmpty() %>"/>
 <c:set var="classEmpty" 	    value="<%= cssClass.isEmpty() %>"/>
-<label><c:out value="${displayLabel}"/></label>
-<input type="checkbox" ng-model="<c:out value="${ngModel}"/>" <c:if test="${!nameEmpty}">name="<c:out value="${name}"/>" </c:if><c:if test="${!ngTrueValueEmpty}">ng-true-value="<c:out value="${ngTrueValue}"/>" </c:if><c:if test="${!ngFalseValueEmpty}">ng-false-value="<c:out value="${ngFalseValue}"/>" </c:if><c:if test="${!ngChangeEmpty}">ng-change="<c:out value="${ngChange}"/>" </c:if><c:if test="${!classEmpty}">class="<c:out value="${cssClass}"/>" </c:if>/>
+<input type="checkbox" ng-model="<c:out value="${ngModel}"/>" <c:if test="${!nameEmpty}">name="<c:out value="${name}"/>" </c:if><c:if test="${!ngTrueValueEmpty}">ng-true-value="<c:out value="${ngTrueValue}"/>" </c:if><c:if test="${!ngFalseValueEmpty}">ng-false-value="<c:out value="${ngFalseValue}"/>" </c:if><c:if test="${!ngChangeEmpty}">ng-change="<c:out value="${ngChange}"/>" </c:if>/><c:if test="${!labelEmpty}"><span <c:if test="${!classEmpty}">class="<c:out value="${cssClass}"/>" </c:if>><c:out value="${displayLabel}"/></span></c:if>
 </input>

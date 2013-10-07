@@ -19,6 +19,13 @@
                         name="./id"
                         validateOnBlur="true"
                         xtype="textfield"/>
+                    <className
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="false"
+                        fieldLabel="CSS Class"
+                        name="./cssClass"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
                     <ngController
                         jcr:primaryType="nt:unstructured"
                         allowBlank="false"
