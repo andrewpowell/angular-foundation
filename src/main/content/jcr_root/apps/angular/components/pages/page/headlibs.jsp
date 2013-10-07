@@ -14,7 +14,7 @@
     String appFilePath = properties.get("appFilePath", String.class);
 %>
 <c:set var="appFilePath" value="<%=appFilePath%>"/>
-<c:set var="hasAppFilePath" value="<%=appFilePath != null && appFilePath.isEmpty()%>"/>
+<c:set var="hasAppFilePath" value="<%=appFilePath != null && !appFilePath.isEmpty()%>"/>
 <cq:includeClientLib js="angular.main"/>
 <c:if test="${hasAppFilePath}">
     <script type="text/javascript" src="<c:out value="${appFilePath}"/>"></script>
