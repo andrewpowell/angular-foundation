@@ -8,10 +8,22 @@
         jcr:primaryType="cq:Panel"
         border="false"
         xtype="panel">
-        <items
+        <controllerName
             jcr:primaryType="nt:unstructured"
             fieldLabel="Controller Name"
             name="./controllerName"
+            validateOnBlur="true"
+            xtype="textfield"/>
+        <ngSubmit
+            jcr:primaryType="nt:unstructured"
+            fieldLabel="ng-submit"
+            name="./ngSubmit"
+            validateOnBlur="true"
+            xtype="textfield"/>
+        <ngClick
+            jcr:primaryType="nt:unstructured"
+            fieldLabel="ng-click"
+            name="./ngClick"
             validateOnBlur="true"
             xtype="textfield"/>
     </items>
