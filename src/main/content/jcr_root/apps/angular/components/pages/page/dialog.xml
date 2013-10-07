@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="500"
+    stateful="false"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <basic
+                jcr:primaryType="cq:Panel"
+                title="dlgBasic">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <basic
+                        jcr:primaryType="cq:Widget"
+                        collapsed="false"
+                        collapsible="false"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <appFile
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Angular Application File Path"
+                                name="./appFilePath"
+                                xtype="textfield"/>
+                        </items>
+                    </basic>
+                </items>
+            </basic>
+        </items>
+    </items>
+</jcr:root>
