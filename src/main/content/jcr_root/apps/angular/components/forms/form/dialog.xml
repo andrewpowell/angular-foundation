@@ -11,7 +11,7 @@
         <items jcr:primaryType="cq:WidgetCollection">
             <controllerName
                 jcr:primaryType="nt:unstructured"
-                fieldLabel="Controller Name"
+                fieldLabel="ng-controller"
                 name="./controllerName"
                 validateOnBlur="true"
                 xtype="textfield"/>
