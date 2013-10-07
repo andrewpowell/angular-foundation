@@ -24,5 +24,5 @@
     <script type="text/javascript" src="<c:out value="${appFilePath}"/>"></script>
 </c:if>
 <c:if test="${hasCssFilePath}">
-    <link rel="stylesheet" href="<c:out value="${appFilePath}"/>">
+    <link rel="stylesheet" href="<c:out value="${cssFilePath}"/>">
 </c:if>
