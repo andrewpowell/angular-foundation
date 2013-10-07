@@ -10,4 +10,5 @@
         sling:resourceType="wcm/core/components/designer"/>
     <images/>
     <clientlib/>
+    <apps/>
 </jcr:root>
