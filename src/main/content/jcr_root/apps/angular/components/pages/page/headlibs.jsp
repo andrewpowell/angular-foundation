@@ -11,9 +11,7 @@
 <%@include file="/libs/foundation/global.jsp" %>
 <%@ page import="org.apache.sling.api.resource.ValueMap" %>
 <%
-    ValueMap pageProps = currentPage.getProperties();
-    String appFilePath = pageProps.get("appFilePath", String.class);
-
+    String appFilePath = properties.get("appFilePath", String.class);
 %>
 <c:set var="appFilePath" value="<%=appFilePath%>"/>
 <c:set var="hasAppFilePath" value="<%=appFilePath != null && appFilePath.isEmpty()%>"/>
