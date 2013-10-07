@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Dialog"
-    height="150"
+    height="200"
     title="Controller Detail"
     xtype="dialog">
     <items
@@ -9,6 +9,12 @@
         border="false"
         xtype="panel">
         <items jcr:primaryType="cq:WidgetCollection">
+            <name
+                jcr:primaryType="nt:unstructured"
+                fieldLabel="name"
+                name="./name"
+                validateOnBlur="true"
+                xtype="textfield"/>
             <controllerName
                 jcr:primaryType="nt:unstructured"
                 fieldLabel="ng-controller"
