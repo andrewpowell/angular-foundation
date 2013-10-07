@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
-          jcr:primaryType="cq:Dialog"
-          title="DIV Properties"
-          xtype="dialog">
+    jcr:primaryType="cq:Dialog"
+    title="DIV Properties"
+    xtype="dialog">
     <items
-            jcr:primaryType="cq:Panel"
-            xtype="panel">
+        jcr:primaryType="cq:Panel"
+        xtype="panel">
         <items jcr:primaryType="cq:WidgetCollection">
             <requiredItems
-                    jcr:primaryType="cq:Widget"
-                    title="Required Items"
-                    xtype="dialogfieldset">
+                jcr:primaryType="cq:Widget"
+                title="Required Items"
+                xtype="dialogfieldset">
                 <items jcr:primaryType="cq:WidgetCollection">
                     <ngRepeat
                         jcr:primaryType="nt:unstructured"
                         allowBlank="false"
                         fieldLabel="ng-repeat"
                         name="./ngRepeat"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <class
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="true"
+                        fieldLabel="CSS Class"
+                        name="./class"
                         validateOnBlur="true"
                         xtype="textfield"/>
                 </items>
