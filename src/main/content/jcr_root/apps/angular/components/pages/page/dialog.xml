@@ -23,6 +23,11 @@
                                 fieldLabel="Angular Application File Path"
                                 name="./appFilePath"
                                 xtype="textfield"/>
+                            <cssFile
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="CSS File Path"
+                                name="./cssFilePath"
+                                xtype="textfield"/>
                         </items>
                     </basic>
                 </items>
