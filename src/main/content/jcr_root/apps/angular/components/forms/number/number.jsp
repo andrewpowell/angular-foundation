@@ -44,6 +44,6 @@
 <c:set var="ngPatternEmpty" 	value="<%= ngPattern.isEmpty() %>"/>
 <c:set var="ngChangeEmpty" 	    value="<%= ngChange.isEmpty() %>"/>
 <c:set var="classEmpty" 	    value="<%= cssClass.isEmpty() %>"/>
-<c:out value="${displayLabel}"/>
+<label><c:out value="${displayLabel}"/></label>
 <input type="number" ng-model="<c:out value="${ngModel}"/>" <c:if test="${!nameEmpty}">name="<c:out value="${name}"/>" </c:if><c:if test="${!minEmpty}">min="<c:out value="${min}"/>" </c:if><c:if test="${!maxEmpty}">max="<c:out value="${max}"/>" </c:if><c:if test="${required}">required </c:if><c:if test="${!ngReqEmpty}">ng-required="<c:out value="${ngRequired}"/>" </c:if><c:if test="${!ngMinLengthEmpty}">ng-minlength="<c:out value="${ngMinLength}"/>" </c:if><c:if test="${!ngMaxLengthEmpty}">ng-maxlength="<c:out value="${ngMaxLength}"/>" </c:if><c:if test="${!ngPatternEmpty}">ng-pattern="<c:out value="${ngPattern}"/>" </c:if><c:if test="${!ngChangeEmpty}">ng-change="<c:out value="${ngChange}"/>" </c:if><c:if test="${!classEmpty}">class="<c:out value="${cssClass}"/>" </c:if>>
 </input>
