@@ -43,6 +43,13 @@
                         name="./name"
                         validateOnBlur="true"
                         xtype="textfield"/>
+                    <placeholder
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="true"
+                        fieldLabel="placeholder"
+                        name="./placeholder"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
                     <required
                         jcr:primaryType="cq:Widget"
                         allowBlank="true"
