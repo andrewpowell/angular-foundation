@@ -13,13 +13,6 @@
                 title="Required Items"
                 xtype="dialogfieldset">
                 <items jcr:primaryType="cq:WidgetCollection">
-                    <displayLabel
-                        jcr:primaryType="nt:unstructured"
-                        allowBlank="false"
-                        fieldLabel="Display Label"
-                        name="./displayLabel"
-                        validateOnBlur="true"
-                        xtype="textfield"/>
                     <type
                         jcr:primaryType="cq:Widget"
                         allowBlank="false"
@@ -33,10 +26,6 @@
                                 jcr:primaryType="nt:unstructured"
                                 text="button"
                                 value="button"/>
-                            <checkbox
-                                jcr:primaryType="nt:unstructured"
-                                text="checkbox"
-                                value="checkbox"/>
                             <color
                                 jcr:primaryType="nt:unstructured"
                                 text="color"
@@ -53,10 +42,6 @@
                                 jcr:primaryType="nt:unstructured"
                                 text="datetime-local"
                                 value="datetime-local"/>
-                            <email
-                                jcr:primaryType="nt:unstructured"
-                                text="email"
-                                value="email"/>
                             <file
                                 jcr:primaryType="nt:unstructured"
                                 text="file"
@@ -73,18 +58,10 @@
                                 jcr:primaryType="nt:unstructured"
                                 text="month"
                                 value="month"/>
-                            <number
-                                jcr:primaryType="nt:unstructured"
-                                text="number"
-                                value="number"/>
                             <password
                                 jcr:primaryType="nt:unstructured"
                                 text="password"
                                 value="password"/>
-                            <radio
-                                jcr:primaryType="nt:unstructured"
-                                text="radio"
-                                value="radio"/>
                             <range
                                 jcr:primaryType="nt:unstructured"
                                 text="range"
@@ -105,31 +82,16 @@
                                 jcr:primaryType="nt:unstructured"
                                 text="tel"
                                 value="tel"/>
-                            <text
-                                jcr:primaryType="nt:unstructured"
-                                text="text"
-                                value="text"/>
                             <time
                                 jcr:primaryType="nt:unstructured"
                                 text="time"
                                 value="time"/>
-                            <url
-                                jcr:primaryType="nt:unstructured"
-                                text="url"
-                                value="url"/>
                             <week
                                 jcr:primaryType="nt:unstructured"
                                 text="week"
                                 value="week"/>
                         </options>
                     </type>
-                    <ngModel
-                        jcr:primaryType="nt:unstructured"
-                        allowBlank="false"
-                        fieldLabel="ng-model"
-                        name="./ngModel"
-                        validateOnBlur="true"
-                        xtype="textfield"/>
                     <name
                         jcr:primaryType="nt:unstructured"
                         allowBlank="false"
@@ -146,6 +108,27 @@
                 title="Optional Items"
                 xtype="dialogfieldset">
                 <items jcr:primaryType="cq:WidgetCollection">
+                    <ng-model
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="true"
+                        fieldLabel="ng-model"
+                        name="./ng-model"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <value
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="true"
+                        fieldLabel="Field Value"
+                        name="./value"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
+                    <label
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="true"
+                        fieldLabel="Display Label"
+                        name="./label"
+                        validateOnBlur="true"
+                        xtype="textfield"/>
                     <required
                         jcr:primaryType="cq:Widget"
                         allowBlank="true"
@@ -165,12 +148,12 @@
                                 value="false"/>
                         </options>
                     </required>
-                    <ngRequired
+                    <ng-required
                         jcr:primaryType="cq:Widget"
                         allowBlank="true"
                         defaultValue="false"
                         fieldLabel="ng-required"
-                        name="./ngRequired"
+                        name="./ng-Required"
                         type="select"
                         xtype="selection">
                         <options jcr:primaryType="cq:WidgetCollection">
@@ -183,40 +166,40 @@
                                 text="false"
                                 value="false"/>
                         </options>
-                    </ngRequired>
-                    <ngMinLength
+                    </ng-required>
+                    <ng-minLength
                         jcr:primaryType="nt:unstructured"
                         allowBlank="true"
                         fieldLabel="ng-minlength"
-                        name="./ngMinLength"
+                        name="./ng-minLength"
                         validateOnBlur="true"
                         xtype="textfield"/>
-                    <ngMaxLength
+                    <ng-maxLength
                         jcr:primaryType="nt:unstructured"
                         allowBlank="true"
                         fieldLabel="ng-maxlength"
-                        name="./ngMaxLength"
+                        name="./ng-maxLength"
                         validateOnBlur="true"
                         xtype="textfield"/>
-                    <ngPattern
+                    <ng-pattern
                         jcr:primaryType="nt:unstructured"
                         allowBlank="true"
                         fieldLabel="ng-pattern"
-                        name="./ngPattern"
+                        name="./ng-pattern"
                         validateOnBlur="true"
                         xtype="textfield"/>
-                    <ngChange
+                    <ng-change
                         jcr:primaryType="nt:unstructured"
                         allowBlank="true"
                         fieldLabel="ng-change"
-                        name="./ngChange"
+                        name="./ng-change"
                         validateOnBlur="true"
                         xtype="textfield"/>
-                    <cssClass
+                    <class
                         jcr:primaryType="nt:unstructured"
                         allowBlank="true"
                         fieldLabel="CSS Class name"
-                        name="./cssClass"
+                        name="./class"
                         validateOnBlur="true"
                         xtype="textfield"/>
                 </items>
