@@ -16,41 +16,6 @@
 %>
 <c:set var="resourceType" value="<%=resourceType%>"/>
 
-<script type="text/javascript">
-    var onInsert = function(){
-        var aDlg = {
-            "jcr:primaryType": "cq:Dialog",
-            "title":CQ.I18n.getMessage("Input Details"),
-            "formUrl": CQ.Util.externalize(win.path),
-            "path":CQ.Util.externalize(win.path),
-            "modal":true,
-            "params": {
-                "./sling:resourceType":"${resourceType}",
-                "_charset_":"utf-8",
-                "./mode" : mod
-            },
-            "items": {
-                "jcr:primaryType": "cq:Widget",
-                "xtype": "cqinclude",
-                "path": path
-            }
-        };
-
-        var dialog = CQ.WCM.getDialog(aDlg);
-        dialog.failure = function(dlg, response) {
-            CQ.Ext.Msg.alert(
-                    CQ.I18n.getMessage("Error"),
-                    CQ.I18n.getMessage("{0}", response.result.Message));
-        };
-        dialog.success = function(dlg, response) {
-            win.hide();
-        };
-        dialog.loadContent(win.path);
-        dialog.show();
-    }
-
-</script>
-
 <c:set var="label"      value="<%= label %>"/>
 <c:set var="hasLabel"   value="<%=!label.isEmpty()%>"/>
 <c:set var="labelRight" value="<%=labelRight%>"/>
