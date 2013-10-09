@@ -12,7 +12,7 @@
 %>
 <c:if test="${isEdit}">
     <html>
-    <cq:include script="/apps/angular/components/pages/page/head.jsp"/>
+    <cq:include script="/libs/foundation/components/page/head.jsp"/>
     <body>
     <div>
         <h3>URL Fragment:</h3>
