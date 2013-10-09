@@ -21,15 +21,16 @@
 
 
 %>
-    <c:set var="nodes" value="<%=nodes%>"/>
-    <c:forEach items="${nodes}" var="node">
-        <c:set var="title" value="<%= node.getProperty("title") %>"/>
-        <c:out value="${title}"/>
-    </c:forEach>
 
+<%
+    while(nodes.hasNext()){
 
+        Node thisNode = nodes.nextNode();
+%>
 
+<%=thisNode.getProperty("title")%>
 
+<%}%>
 
 
 

@@ -12,7 +12,8 @@
 %>
 <c:if test="${isEdit}">
     <html>
-    <cq:include script="/libs/foundation/components/page/head.jsp"/>
+    <cq:include script="/libs/wcm/core/components/init/init.jsp"/>
+    <cq:includeClientLib categories="cq.foundation-main"/>
     <body>
     <div>
         <h3>URL Fragment:</h3>
@@ -22,7 +23,9 @@
         <h3>Route Controller Name:</h3>
         <cq:include path="controllerName" resourceType="/apps/angular/components/common/htmlText"/>
     </div>
+    <div><h3>Template:</h3></div>
 </c:if>
+
 <div>
     <cq:include path="main" resourceType="foundation/components/parsys"/>
 </div>
