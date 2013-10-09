@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="A base component that will automatically open the edit dialog upon adding to the page."
+    jcr:primaryType="cq:Component"
+    jcr:title="Auto Edit Base"
+    componentGroup=".hidden"/>
