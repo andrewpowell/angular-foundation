@@ -1,3 +1,4 @@
 .idea
 atlassian-ide-plugin.xml
 .vlt
+src/main/content/jcr_root/libs/foundation
