@@ -17,14 +17,14 @@
                         jcr:primaryType="nt:unstructured"
                         allowBlank="false"
                         fieldLabel="Display Label"
-                        name="./displayLabel"
+                        name="./label"
                         validateOnBlur="true"
                         xtype="textfield"/>
                     <ngModel
                         jcr:primaryType="nt:unstructured"
                         allowBlank="false"
                         fieldLabel="ng-model"
-                        name="./ngModel"
+                        name="./ng-model"
                         validateOnBlur="true"
                         xtype="textfield"/>
                 </items>
@@ -74,7 +74,7 @@
                         allowBlank="true"
                         defaultValue="false"
                         fieldLabel="ng-required"
-                        name="./ngRequired"
+                        name="./ng-required"
                         type="select"
                         xtype="selection">
                         <options jcr:primaryType="cq:WidgetCollection">
@@ -92,42 +92,42 @@
                         jcr:primaryType="nt:unstructured"
                         allowBlank="true"
                         fieldLabel="ng-minlength"
-                        name="./ngMinLength"
+                        name="./ng-minlength"
                         validateOnBlur="true"
                         xtype="textfield"/>
                     <ngMaxLength
                         jcr:primaryType="nt:unstructured"
                         allowBlank="true"
                         fieldLabel="ng-maxlength"
-                        name="./ngMaxLength"
+                        name="./ng-maxlength"
                         validateOnBlur="true"
                         xtype="textfield"/>
                     <ngPattern
                         jcr:primaryType="nt:unstructured"
                         allowBlank="true"
                         fieldLabel="ng-pattern"
-                        name="./ngPattern"
+                        name="./ng-pattern"
                         validateOnBlur="true"
                         xtype="textfield"/>
                     <ngChange
                         jcr:primaryType="nt:unstructured"
                         allowBlank="true"
                         fieldLabel="ng-change"
-                        name="./ngChange"
+                        name="./ng-change"
                         validateOnBlur="true"
                         xtype="textfield"/>
                     <ngTrim
                         jcr:primaryType="nt:unstructured"
                         allowBlank="true"
                         fieldLabel="ng-trim"
-                        name="./ngTrim"
+                        name="./ng-trim"
                         validateOnBlur="true"
                         xtype="textfield"/>
                     <cssClass
                         jcr:primaryType="nt:unstructured"
                         allowBlank="true"
                         fieldLabel="CSS Class name"
-                        name="./cssClass"
+                        name="./class"
                         validateOnBlur="true"
                         xtype="textfield"/>
                 </items>

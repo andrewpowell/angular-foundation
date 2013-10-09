@@ -17,14 +17,14 @@
                         jcr:primaryType="nt:unstructured"
                         allowBlank="false"
                         fieldLabel="Display Label"
-                        name="./displayLabel"
+                        name="./label"
                         validateOnBlur="true"
                         xtype="textfield"/>
                     <ngModel
                         jcr:primaryType="nt:unstructured"
                         allowBlank="false"
                         fieldLabel="ng-model"
-                        name="./ngModel"
+                        name="./ng-model"
                         validateOnBlur="true"
                         xtype="textfield"/>
                 </items>
@@ -47,28 +47,28 @@
                         jcr:primaryType="nt:unstructured"
                         allowBlank="true"
                         fieldLabel="ng-true-value"
-                        name="./ngTrueValue"
+                        name="./ng-true-value"
                         validateOnBlur="true"
                         xtype="textfield"/>
                     <ngFalseValue
                         jcr:primaryType="nt:unstructured"
                         allowBlank="true"
                         fieldLabel="ng-false-value"
-                        name="./ngFalseValue"
+                        name="./ng-false-value"
                         validateOnBlur="true"
                         xtype="textfield"/>
                     <ngChange
                         jcr:primaryType="nt:unstructured"
                         allowBlank="true"
                         fieldLabel="ng-change"
-                        name="./ngChange"
+                        name="./ng-change"
                         validateOnBlur="true"
                         xtype="textfield"/>
                     <cssClass
                         jcr:primaryType="nt:unstructured"
                         allowBlank="true"
                         fieldLabel="CSS Class name"
-                        name="./cssClass"
+                        name="./class"
                         validateOnBlur="true"
                         xtype="textfield"/>
                 </items>
