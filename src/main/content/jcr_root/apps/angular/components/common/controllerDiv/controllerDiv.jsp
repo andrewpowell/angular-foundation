@@ -5,7 +5,7 @@
   Creates a DIV tag with the specified controller and id.
 
 --%>
-<%@include file="/libs/foundation/global.jsp"%>
+<%@include file="/apps/angular/global.jsp"%>
 <%@page session="false" %>
 <%
 	String idName           = properties.get("id","");

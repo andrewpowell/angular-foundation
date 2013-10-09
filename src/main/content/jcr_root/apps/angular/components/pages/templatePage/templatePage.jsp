@@ -5,7 +5,7 @@
   A template for creating AngularJS templates
 
 --%>
-<%@include file="/libs/foundation/global.jsp"%>
+<%@include file="/apps/angular/global.jsp"%>
 <%@page session="false" %>
 <%
 	// TODO add you code here

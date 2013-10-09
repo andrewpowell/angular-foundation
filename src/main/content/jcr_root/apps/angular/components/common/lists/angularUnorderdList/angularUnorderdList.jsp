@@ -5,7 +5,7 @@
   An unordered list that repeats over a collection.
 
 --%>
-<%@include file="/libs/foundation/global.jsp"%>
+<%@include file="/apps/angular/global.jsp"%>
 <%@page session="false" %>
 <%
 	String ngRepeat = properties.get("ngRepeat","");

@@ -5,9 +5,7 @@
   HTML input element control with angular data-binding. Input control follows HTML5 input types and polyfills the HTML5 validation behavior for older browsers.
 
 --%>
-<%@include file="/apps/angular/global.jsp"%>
-<%@page session="false" %>
-<cq:setContentBundle/>
+<%@include file="/apps/angular/components/common/autoEditBase/autoEditBase.jsp"%>
 
 <%
     String label = properties.get("label","");
