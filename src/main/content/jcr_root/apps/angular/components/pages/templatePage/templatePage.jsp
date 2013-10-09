@@ -10,6 +10,16 @@
 <%
 	// TODO add you code here
 %>
+<c:if test="${isEdit}">
+    <div>
+        <h3>URL Fragment:</h3>
+        <cq:include path="urlFragment" resourceType="/apps/angular/components/common/htmlText"/>
+    </div>
+    <div>
+        <h3>Route Controller Name:</h3>
+        <cq:include path="controllerName" resourceType="/apps/angular/components/common/htmlText"/>
+    </div>
+</c:if>
 <div>
     <cq:include path="main" resourceType="foundation/components/parsys"/>
 </div>
