@@ -9,6 +9,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.7.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.osgi:org.osgi.core:4.2.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.osgi:org.osgi.compendium:4.2.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.felix:org.apache.felix.scr.annotations:1.6.0" level="project" />
@@ -30,7 +32,7 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: taglibs:standard:1.1.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:jstl:1.1.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.day.cq.wcm:cq-wcm-taglib:5.6.2" level="project" />
-    <orderEntry type="library" name="Maven: com.day.cq:cq-i18n:5.4.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.day.cq:cq-i18n:5.4.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.sling:org.apache.sling.scripting.jsp.taglib:2.1.8" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:jsp-api:2.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.adobe.granite:com.adobe.granite.xssprotection:5.5.22" level="project" />

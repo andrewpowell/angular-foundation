@@ -1,4 +1,4 @@
-Export-Package: com.universalmind.angular
+Export-Package: apps.angular.src.impl.src.main.java.com.universalmind.angular.*
 Private-Package: com.universalmind.angular.impl
 Bundle-Name: Sample project angular
 Bundle-Description: Contains the angular sample bundle

@@ -1,7 +1,8 @@
 <%@include file="/apps/angular/global.jsp"%>
 <%@page session="false" %>
+<%@page import="java.util.ArrayList"%>
 <%@page import="java.util.Iterator"%>
-<%@page import="com.day.cq.wcm.api.Page"%>
+<%@ page import="java.util.List" %>
 
 
 <cq:setContentBundle/>
@@ -18,19 +19,15 @@
 
     Node nodeAppTitle = resAppTitle.adaptTo(Node.class);
     NodeIterator nodes = nodeAppTitle.getNodes();
-
-
-%>
-
-<%
+    List<Node> nodeList = new ArrayList<Node>();
     while(nodes.hasNext()){
+        nodeList.add(nodes.nextNode());
+    }
 
-        Node thisNode = nodes.nextNode();
+
 %>
+<c:out value="<%=nodeAppTitle.getProperty("text")%>"/>
 
-<%=thisNode.getProperty("title")%>
-
-<%}%>
 
 
 
